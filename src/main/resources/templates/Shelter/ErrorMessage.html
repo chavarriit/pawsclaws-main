@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <title th:text="${title}">DISCUS</title>
+</head>
+
+<body>
+    <div th:insert="fragments/Header :: siteHeader"></div>
+    <!-- code-->
+    <h1>Error Message<h1>
+            <label th:text="errorData.errorMessage"></label>
+            <label th:text="errorData.errorCode"></label>
+            <a class="button-link" href="/home"></a>
+            <div th:insert="fragments/footer :: siteFooter"></div>
+</body>
+
+</html>

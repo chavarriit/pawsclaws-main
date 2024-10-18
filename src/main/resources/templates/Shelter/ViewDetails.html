@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{/css/style/css}">
+    <title th:text="${title}">DISCUS</title>
+</head>
+
+<body>
+    <div th:insert="fragments/header :: sightHeader"></div>
+        <table>
+        <tr>
+        <td>Name</td>
+            <td th:text= "${pet name} "></td>
+        </td>
+        <tr>
+            <td>Age</td>
+            <td th:text= "${pet.age} "> </td>
+        </tr>
+        <tr>
+            <td>Type</td>
+            <td  th:text= "${pet.petType} "></td>
+        </tr>
+        <tr>
+            <td>Health</td>
+            <tr th:each="pet : ${pets}">
+                <td th:text= "${pet.health} + '%'"></td>
+            </tr>
+            <tr>
+                <td>happiness</td>
+                <td th:text= "${pet.happiness} + '%'"> </td>
+            </tr>
+            <tr>
+                <td>Hunger</td>
+                <td  th:text= "${pet.hunger} + '%'"></td>
+            </tr>
+            <tr>
+                <td>Thirst</td>
+                <td  th:text= "${pet.thirst} + '%'"></td>
+            </tr>
+            <tr>
+                <td>Status</td>
+                <td th:text="${pet.status} + '%'"></td>
+            </tr>
+    </table>
+    <div>
+        <a class="button-link" href="#"  th:href="@{/feedpet">Feed</a>
+        <a class="button-link" href="#"  th:href="@/{feedpet">Water</a>
+        <a class="button-link" href="#"  th:href="@/{feedpet">Play</a>
+        <a class="button-link" href="#"  th:href="@/{/heal/{id}feedpet">Heal</a>
+    </div>
+
+    <div th:insert="fragments/footer :: sightFooter"></div>
+</body>
+
+</html>

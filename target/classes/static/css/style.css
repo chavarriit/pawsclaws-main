@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: arial, sans-serif;
+    line-height: 1.6;
+    background-color: blue;
+}
+
+header {
+    background-color: darkgray;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+header nav ul li a {
+    color: antiquewhite;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #575757;
+}
+
+footer {
+    background-color: sandybrown;
+    color: azure;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 80%;
+    text-align: left;
+}
+
+table th,
+table td {
+    border: 1px white;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: aquamarine;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: coral;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: cadetblue;
+}
+.button-link {
+    display: inline-block;
+    padding: 6px 20px;
+    background-color: coral;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button-link:hover{
+    background-color: coral;
+    color: aliceblue;
+}
+
+.action-buttons {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.action-buttons {
+    margin: 0 10px;
+}
